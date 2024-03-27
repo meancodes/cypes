@@ -45,20 +45,6 @@ header{
     font-size: 20px;
 }
 
-.navlinks{
-    flex: 1;
-}
-
-.navlinks{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.navlinks .start{
-    margin-left: 370px;
-}
-
 .nav ul li a{
     text-decoration: none;
     color: black;
@@ -393,10 +379,6 @@ footer{
     .nav ul li{
         padding: 18px;
         font-size: 18px;
-    }
-
-    .navlinks .start{
-        margin-left: 40px;
     }
 
     .start{
