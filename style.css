@@ -10,12 +10,8 @@
     font-family: "Inter";
 }
 
-
-/*-----SECTION 1/HEADER-----*/
-
 header{
-    width: 1280px;
-    height: 1327px;
+    width: 100%;
     margin: auto;
     text-align: center;
 }
@@ -23,6 +19,7 @@ header{
 .herobtn img{
     width: 100px;
     border: none;
+    margin-left: 0;
 }
 
 
@@ -33,14 +30,33 @@ header{
     justify-content: space-between;
 }
 
+.nav i{
+    display: none;
+}
+
 .nav ul{
     display: flex;
+    justify-content: flex-start;
     list-style: none;
 }
 
 .nav ul li{
     padding: 30px;
-    font-size: 12px;
+    font-size: 20px;
+}
+
+.navlinks{
+    flex: 1;
+}
+
+.navlinks{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navlinks .start{
+    margin-left: 370px;
 }
 
 .nav ul li a{
@@ -56,9 +72,12 @@ header{
     border-radius: 8px;
 }
 
+.nav .start{
+    margin-right: 13px;
+}
+
 .section1{
-    width: 1049px;
-    height: 383px;
+    width: 90%;
     margin: 50px auto;
     text-align: center;
 }
@@ -75,7 +94,6 @@ header{
 .section1 h1{
     font-size: 72px;
     width: auto;
-    height: auto;
     margin: 20px auto 10px;
 }
 
@@ -84,13 +102,11 @@ header{
     font-size: 20px;
     font-weight: lighter;
     width: auto;
-    height: auto;
     margin-bottom: 50px;
 }
 
 .section1 a{
     width: 152px;
-    height: 43px;
     font-size: 16px;
     padding: 12px 24px;
     color: white;
@@ -102,28 +118,24 @@ header{
 }
 
 header img{
-    width: 1280px;
+    width: 90%;
     border-radius: 24px;
     border: 0.5px solid rgb(233, 223, 204);
 }
 
-
-
-
-/*----- MAIN ------*/
-
 main{
-    width: 1280px;
+    width: 90%;
     margin: 20px auto;
 }
 
 .card{
-    width: 1280px;
-    margin: 0 auto 80px;
+    width: 100%;
+    margin: 80px 0 80px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     text-align: left;
-    text-wrap: wrap;
+    gap: 4%;
 }
 
 .card h2{
@@ -135,12 +147,15 @@ main{
     padding: 10px;
     font-size: 25px;
     margin: 15px auto 10px;
+    text-wrap: wrap;
+}
+.text{
+    width: 48%;
 }
 
 .card img{
-    width: 620px;
-    height: 399px;
-    margin: 10px;
+    width: 48%;
+    margin: 40px 0;
     border: 0.5px solid rgb(233, 223, 204);
     border-radius: 15px;
 }
@@ -155,14 +170,9 @@ main{
     border-radius: 5px;
 }
 
-
-
-
-/*-----SECTION 2-----*/
-
 .section2{
     display: block;
-    margin: 50px auto;
+    margin: 20px auto 40px;
     text-align: center;
 }
 
@@ -180,7 +190,6 @@ main{
 
 .section2 a{
     width: 152px;
-    height: 43px;
     font-size: 16px;
     padding: 12px 30px;
     color: white;
@@ -191,21 +200,16 @@ main{
     text-decoration: none;
 }
 
-
-
-
-/*-----SECTION 3-----*/
-
 .section3{
     display: flex;
-    width: 1280px;
     flex-wrap: wrap;
-    margin: 30px auto 60px;
-    gap: 60px;
+    margin: 30px 0 60px;
+    gap: 4%;
 }
 
 .section3 .features{
-    width: 385px;
+    width: 48%;
+    margin-bottom: 40px;
 }
 
 .section3 .features h4{
@@ -222,12 +226,8 @@ main{
     text-decoration: none;
     color: #1671d9;
     margin-top: 30px;
+    font-size: 18px;
 }
-
-
-
-
-/*-----BLUE BG-----*/
 
 .blue{
     background-color: #1671d9;
@@ -249,7 +249,7 @@ main{
 }
 
 .blue img{
-    width: 1180px;
+    width: 90%;
     border-radius: 24px;
 }
 
@@ -269,11 +269,6 @@ main{
 .deepblue button{
     margin-bottom: 60px;
 }
-
-
-
-
-/*-----FAQS-----*/
 
 .faqs{
     background-color: black;
@@ -319,10 +314,6 @@ main{
     color: #ffffff75;
 }
 
-
-
-/*----- FAQFOOT-----*/
-
 .faqfoot{
     text-align: center;
     background-color: #1671d9;
@@ -342,14 +333,9 @@ main{
     line-height: 1.5rem;
 }
 
-
-
-
-/*----- FOOTER-----*/
-
 footer{
-    width: 1280px;
-    margin: 20px auto;
+    width: 100%;
+    margin: 0;
 }
 
 .footer{
@@ -357,8 +343,8 @@ footer{
     flex-wrap: wrap;
     background-color: black;
     justify-content: space-between;
-    padding: 60px 100px;
-    font-size: 20px;
+    padding: 60px;
+    font-size: 16px;
 }
 
 .footerrow p{
@@ -385,18 +371,32 @@ footer{
 /*-----MEDIA QUERY-----*//*-----MEDIA QUERY-----*/
 /*-----MEDIA QUERY-----*//*-----MEDIA QUERY-----*/
 
-@media(max-width: 375px){
-    
-/*-----SECTION 1/HEADER-----*/
 
+
+@media(max-width: 1536px){
+    .card h2{
+        font-size: 32px;
+    }
+
+    .section3{
+        margin-top: 100px;
+    }
+}
+
+
+@media(max-width: 1100px){
+    
     header{
-        width: 310px;
-        height: 590px;
+        width: 100%;
     }
 
     .nav ul li{
-        padding: 5px;
-        font-size: 10px;
+        padding: 18px;
+        font-size: 18px;
+    }
+
+    .navlinks .start{
+        margin-left: 40px;
     }
 
     .start{
@@ -404,8 +404,7 @@ footer{
     }
 
     .section1{
-        width: 310px;
-        height: 170px;
+        width: 570px;
         margin: 50px auto;
 }
 
@@ -414,65 +413,46 @@ footer{
 }
 
 .section1 p{
-    font-size: 10px;
-    width: auto;
-    height: auto;
+    font-size: 13px;
     margin-bottom: 20px;
 }
 
 .section1 .anchor{
-    width: 0;
-    height: 0;
-    font-size: 10px;
+    font-size: 13px;
     padding: 10px;
 }
 
 .section1 a{
-    width: 0;
-    height: 0;
-    font-size: 12px;
+    font-size: 13px;
     padding: 8px 12px;
 }
-
-header img{
-    width: 310px;
-}
-    
-/*-----MAIN-----*/
     
 main{
-    width: 310px;
-    margin: 20px auto;
+    margin: 10px auto;
 }
 
 .card{
-    width: 310px;
-    margin: auto;
-}
-
-.text{
-    width: 40%;
+    margin: 20px 0 20px;
 }
 
 .card img{
-    width: 50%;
-    height: 0;
-    margin: 10px;
+    margin: 20px 0;
 }
 
 .card h2{
     padding: 5px 0 0 10px;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .card p{
     padding: 10px;
-    font-size: 8px;
-    margin: 15px auto 10px;
+    font-size: 12px;
+    margin: 5px auto;
 }
 
-
-/*-----SECTION 2-----*/
+.card button{
+    font-size: 12px;
+}
 
     .section2 h3{
         font-size: 25px;
@@ -484,316 +464,56 @@ main{
     }
 
     .section2 a{
-        width: 0;
-        height: 0;
         font-size: 12px;
         padding: 8px 20px;
         margin-top: 0;
     }
 
-
-
-/*-----SECTION 3-----*/
-
     .section3{
-        width: 310px;
-        margin: 10px auto;
-    }
-
-    .section3 .features{
-        width: 200px;
+        margin: 50px 0;
     }
 
     .section3 .features h4{
         font-size: 20px;
-        margin-bottom: 10px;
     }
 
     .section3 .features p{
-        font-size: 10px;
-        margin-bottom: 10px;
+        font-size: 12px;
     }
 
+    .section3 .features a{
+        font-size: 12px;
+    }
 
+    .title h3{
+        font-size: 25px;
+    }
 
-/*-----BLUE BG-----*/
+    .title p{
+        font-size: 12px;
+        line-height: 1rem;
+        margin: 10px auto 30px;
+    }
 
     .blue{
-        margin: 20px auto;
-    }
-    
-    .title h3{
-        font-size: 25px;
-    }
-
-    .title p{
-        font-size: 8px;
-        line-height: 0.7rem;
-        margin: 10px auto 30px;
+        margin: 20px 0;
     }
 
     .blue img{
-        width: 270px;
+        width: 90%;
         border-radius: 12px;
     }
     
     .deepblue p{
-        font-size: 12px;
+        font-size: 13px;
         line-height: 1rem;
-        padding: 20px 40px;
+        padding: 20px 100px;
     }
 
     .deepblue button{
+        font-size: 13px;
         margin: 0px auto 20px;
     }
-
-
-
-/*----- FAQS-----*/
-
-    .faqs{
-        width: 280px;
-        padding: 50px;
-        margin: auto;
-    }
-
-    .faqs h5{
-        font-size: 25px;
-        margin-bottom: 10px;
-    }
-
-    .faq{
-        font-size: 13px;
-    }
-
-    .foot2{
-        font-size: 13px;
-        margin-bottom: 10px;
-    }
-
-    .paragraph{
-        font-size: 10px;
-        padding-right: 90px;
-    }
-
-
-
-/*----- FAQFOOT-----*/
-
-    .faqfoot{
-        margin: 30px auto;
-        border-radius: 12px;
-        padding: 40px 60px;
-        color: #fff;
-    }
-
-    .faqfoot h6{
-        font-size: 18px;
-    }
-
-    .faqfoot p{
-        margin-top: 20px;
-        font-size: 13px;
-        line-height: 1rem;
-    }
-    .darkstart{
-        padding: 5px 15px;
-        font-size: 12px;
-        color: white;
-        background-color: rgb(50, 57, 70);
-        border: 0px; 
-        border-radius: 5px;
-    }
-
-
-
-/*----- FOOTER-----*/
-
-
-    footer{
-        width: 320px;
-    }
-    .footer{
-        margin: auto;
-        padding: 40px 30px;
-        font-size: 12px;
-    }
-
-    .faqfoot h6{
-        font-size: 18px;
-    }
-
-    .faqfoot p{
-        margin-top: 20px;
-        font-size: 13px;
-        line-height: 1rem;
-    }
-}
-
-
-@media(max-width: 700px){
-    .container{
-        max-width: 700px;
-    }
-/*-----SECTION 1/HEADER-----*/
-
-    header{
-        width: 470px;
-        height: 590px;
-    }
-
-    .nav ul li{
-        padding: 5px;
-        font-size: 10px;
-    }
-
-    .start{
-        padding: 8px 13px;
-    }
-
-    .section1{
-        width: 470px;
-        height: 170px;
-        margin: 50px auto;
-}
-
-.section1 h1{
-    font-size: 25px;
-}
-
-.section1 p{
-    font-size: 10px;
-    width: auto;
-    height: auto;
-    margin-bottom: 20px;
-}
-
-.section1 .anchor{
-    width: 0;
-    height: 0;
-    font-size: 10px;
-    padding: 10px;
-}
-
-.section1 a{
-    width: 0;
-    height: 0;
-    font-size: 12px;
-    padding: 8px 12px;
-}
-
-header img{
-    width: 470px;
-}
-    
-/*-----MAIN-----*/
-    
-main{
-    width: 470px;
-    margin: 20px auto;
-}
-
-.card{
-    width: 470px;
-    margin: auto;
-}
-
-.text{
-    width: 40%;
-}
-
-.card img{
-    width: 50%;
-    height: 0;
-    margin: 10px;
-}
-
-.card h2{
-    padding: 5px 0 0 10px;
-    font-size: 15px;
-}
-
-.card p{
-    padding: 10px;
-    font-size: 8px;
-    margin: 15px auto 10px;
-}
-
-
-/*-----SECTION 2-----*/
-
-    .section2 h3{
-        font-size: 25px;
-    }
-
-    .section2 p{
-        font-size: 10px;
-        margin-bottom: 20px;
-    }
-
-    .section2 a{
-        width: 0;
-        height: 0;
-        font-size: 12px;
-        padding: 8px 20px;
-        margin-top: 0;
-    }
-
-
-
-/*-----SECTION 3-----*/
-
-    .section3{
-        width: 470px;
-        margin: 10px;
-    }
-
-    .section3 .features{
-        width: 200px;
-    }
-
-    .section3 .features h4{
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
-
-    .section3 .features p{
-        font-size: 10px;
-        margin-bottom: 10px;
-    }
-
-
-
-/*-----BLUE BG-----*/
-
-    .title h3{
-        font-size: 25px;
-    }
-
-    .title p{
-        font-size: 8px;
-        line-height: 0.7rem;
-        margin: 10px auto 30px;
-    }
-
-    .blue img{
-        width: 440px;
-        border-radius: 12px;
-    }
-    
-    .deepblue p{
-        font-size: 12px;
-        line-height: 1rem;
-        padding: 20px 40px;
-    }
-
-    .deepblue button{
-        margin: 0px auto 20px;
-    }
-
-
-
-/*----- FAQS-----*/
 
     .faqs{
         padding: 50px;
@@ -805,22 +525,18 @@ main{
     }
 
     .faq{
-        font-size: 13px;
+        font-size: 16px;
     }
 
     .foot2{
-        font-size: 13px;
+        font-size: 16px;
         margin-bottom: 10px;
     }
 
     .paragraph{
-        font-size: 10px;
+        font-size: 13px;
         padding-right: 90px;
     }
-
-
-
-/*----- FAQFOOT-----*/
 
     .faqfoot{
         margin: 30px;
@@ -830,35 +546,184 @@ main{
     }
 
     .faqfoot h6{
-        font-size: 18px;
+        font-size: 25px;
     }
 
     .faqfoot p{
-        margin-top: 20px;
+        margin: 20px auto 30px;
         font-size: 13px;
         line-height: 1rem;
     }
-    .darkstart{
-        padding: 5px 15px;
-        font-size: 12px;
-        color: white;
-        background-color: rgb(50, 57, 70);
-        border: 0px; 
-        border-radius: 5px;
+
+    .faqfoot button{
+        font-size: 13px;
     }
 
-
-
-/*----- FOOTER-----*/
-
-
-    footer{
-        width: 100%;
-    }
     .footer{
-        margin: auto;
-        padding: 40px 30px;
+        padding: 40px;
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 800px){
+
+    .nav ul li{
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .start{
+        padding: 8px 13px;
+    }
+
+    .section1{
+        margin: 30px auto;
+}
+
+.section1 h1{
+    font-size: 16px;
+}
+
+.section1 p{
+    font-size: 11px;
+    line-height: 1rem;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+.section1 .anchor{
+    font-size: 12px;
+    padding: 10px;
+}
+
+.section1 a{
+    font-size: 12px;
+    padding: 8px 12px;
+}
+
+header img{
+    width: 90%;
+}
+    
+main{
+    margin: 20px auto;
+}
+
+.card{
+    gap: 2%;
+}
+
+.card h2{
+    padding: 5px 0 0 10px;
+    font-size: 12px;
+}
+
+.card p{
+    padding: 0 10px 2px;
+    font-size: 10px;
+    margin: 8px auto 5px;
+}
+
+    .section2 h3{
+        font-size: 16px;
+    }
+
+    .section2 p{
+        font-size: 11px;
+        line-height: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .section2 a{
+        font-size: 10px;
+        margin-top: 5px;
+    }
+
+    .section3{
+        margin: 40px 0;
+    }
+
+    .section3 .features{
+        width: 48%;
+        margin-bottom: 20px;
+    }
+
+    .section3 .features h4{
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .section3 .features p{
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+
+    .blue{
+        margin: 20px auto;
+        padding-top: 20px;
+    }
+    
+    .title h3{
+        font-size: 18px;
+    }
+
+    .title p{
         font-size: 12px;
+        line-height: 1rem;
+        margin: 10px 40px 30px;
+    }
+
+    .blue img{
+        border-radius: 12px;
+    }
+
+    .deepblue{
+        margin-top: 30px;
+    }
+    
+    .deepblue p{
+        font-size: 12px;
+        line-height: 1rem;
+        padding: 20px 60px;
+    }
+
+    .deepblue button{
+        font-size: 12px;
+        margin: 0px auto 20px;
+    }
+    
+    .faqs h5{
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .faq{
+        font-size: 12px;
+        padding: 12px 20px;
+        border-radius: 10px;
+    }
+
+    .foot{
+        padding: 20px;
+        border-radius: 10px;
+    }
+    
+    .foot2{
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .paragraph{
+        font-size: 10px;
+        padding-right: 60px;
+    }
+
+    .faqfoot{
+        width: 90%;
+        margin: 30px auto;
+        border-radius: 12px;
+        padding: 40px 60px 20px;
+        color: #fff;
     }
 
     .faqfoot h6{
@@ -867,7 +732,211 @@ main{
 
     .faqfoot p{
         margin-top: 20px;
-        font-size: 13px;
+        font-size: 12px;
         line-height: 1rem;
     }
+
+    .faqfoot button{
+        font-size: 12px;
+        margin: 0px auto 10px;
+    }
+
+    .footer{
+        font-size: 11px;
+    }
+
+
+
+@media(max-width: 400px){
+
+    .nav ul{
+        display: block;
+    }
+
+    .nav i{
+        display: block;
+    }
+
+    .navlinks{
+        display: block;
+        position: fixed;
+        background: turquoise;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+
+.section1 h1{
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.section1 p{
+    font-size: 8px;
+    line-height: 0.5rem;
+    margin-bottom: 5px;
+}
+
+.section1 .anchor{
+    font-size: 10px;
+}
+
+.section1 a{
+    font-size: 10px;
+}
+
+.card{
+    gap: 1%;
+}
+
+
+.card h2{
+    padding: 5px 0 0 10px;
+    font-size: 8px;
+}
+
+.card p{
+    padding: 0 10px 2px;
+    font-size: 6px;
+    margin: 2px auto;
+}
+
+
+/*-----SECTION 2-----*/
+
+    .section2 h3{
+        font-size: 12px;
+    }
+
+    .section2 p{
+        font-size: 8px;
+        line-height: 0.5rem;
+        margin-bottom: 10px;
+    }
+
+    .section2 a{
+        font-size: 8px;
+        margin-top: 5px;
+    }
+
+    .section3 .features{
+        width: 48%;
+        margin-bottom: 16px;
+    }
+
+    .section3 .features h4{
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .section3 .features p{
+        font-size: 8px;
+        margin-bottom: 5px;
+    }
+
+    .section3 .features a{
+        font-size: 10px;
+    }
+    .blue{
+        margin: 20px auto;
+        padding-top: 20px;
+    }
+    
+    .title h3{
+        font-size: 18px;
+    }
+
+    .title p{
+        font-size: 10px;
+        line-height: 0.7rem;
+        margin: 10px 40px 30px;
+    }
+
+    .blue img{
+        border-radius: 12px;
+    }
+
+    .deepblue{
+        margin-top: 30px;
+    }
+    
+    .deepblue p{
+        font-size: 10px;
+        line-height: 1rem;
+        padding: 20px 40px;
+    }
+
+    .deepblue button{
+        margin: 0px auto 20px;
+    }
+
+
+
+/*----- FAQS-----*/
+    
+    .faqs h5{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .faq{
+        font-size: 8px;
+        padding: 12px 20px;
+        border-radius: 10px;
+    }
+
+    .foot{
+        padding: 20px;
+        border-radius: 10px;
+    }
+    
+    .foot2{
+        font-size: 8px;
+        margin-bottom: 20px;
+    }
+
+    .paragraph{
+        font-size: 6px;
+        padding-right: 40px;
+    }
+
+
+
+/*----- FAQFOOT-----*/
+
+    .faqfoot{
+        margin: 30px auto;
+        border-radius: 12px;
+        padding: 40px 40px;
+        color: #fff;
+    }
+
+    .faqfoot h6{
+        font-size: 12px;
+    }
+
+    .faqfoot p{
+        margin-top: 20px;
+        font-size: 8px;
+        line-height: 1rem;
+    }
+
+
+
+/*----- FOOTER-----*/
+
+
+    .footer{
+        font-size: 8px;
+    }
+}
+.darkstart{
+    padding: 5px 10px;
+    font-size: 8px;
+    border-radius: 5px;
+}
 }
